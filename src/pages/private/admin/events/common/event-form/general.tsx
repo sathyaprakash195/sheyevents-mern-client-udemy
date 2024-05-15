@@ -21,7 +21,7 @@ function General({
   const onGuestRemove = (index: number) => {
     const existingGuests = eventData.guests || [];
     const newGuests = existingGuests.filter(
-      (guest: string, i: number) => i !== index
+      (_guest: string, i: number) => i !== index
     );
     setEventData({ ...eventData, guests: newGuests });
   };

@@ -73,7 +73,7 @@ function EventsPage() {
     {
       title: "Actions",
       dataIndex: "actions",
-      render: (text: any, record: any) => (
+      render: (_text: any, record: any) => (
         <div className="flex gap-5">
           <Trash2
             className="cursor-pointer text-red-700"
